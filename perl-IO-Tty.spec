@@ -34,7 +34,7 @@ Lista dostêpnych sta³ych znajduje siê w IO::Tty::Constant.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %{!?_without_tests:%{__make} test}
