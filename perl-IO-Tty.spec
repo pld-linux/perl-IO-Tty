@@ -2,8 +2,8 @@
 Summary:	IO-Tty perl module
 Summary(pl):	Modu³ perla IO-Tty
 Name:		perl-IO-Tty
-Version:	0.04
-Release:	3
+Version:	0.05
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
