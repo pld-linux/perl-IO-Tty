@@ -2,13 +2,12 @@
 Summary:	IO-Tty perl module
 Summary(pl):	Modu³ perla IO-Tty
 Name:		perl-IO-Tty
-Version:	0.02
-Release:	3
+Version:	0.03
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/IO/IO-Tty-%{version}.tar.gz
-Patch0:		perl-IO-Tty-make.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
@@ -23,7 +22,6 @@ Modu³ perla IO-Tty.
 
 %prep
 %setup -q -n IO-Tty-%{version}
-%patch -p0
 
 %build
 perl Makefile.PL
@@ -38,7 +36,7 @@ strip --strip-unneeded $RPM_BUILD_ROOT/%{perl_sitearch}/auto/IO/Tty/*.so
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/IO/Tty
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
+  mv -f .packlist.new .packlist
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* 
