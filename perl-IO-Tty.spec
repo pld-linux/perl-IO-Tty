@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	IO
 %define	pnam	Tty
-%include	/usr/lib/rpm/macros.perl
 Summary:	IO-Tty perl module
 Summary(pl):	Modu³ perla IO-Tty
 Name:		perl-IO-Tty
 Version:	0.05
-Release:	2
-
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -21,7 +20,7 @@ IO-Tty perl module.
 Modu³ perla IO-Tty.
 
 %prep
-%setup -q -n IO-Tty-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
