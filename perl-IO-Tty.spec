@@ -9,12 +9,12 @@ Summary:	IO::Tty - Low-level allocate a pseudo-Tty, import constants
 Summary(pl):	Modu³ Perla IO::Tty - niskopoziomowa alokacja pseudo-tty, wa¿ne sta³e
 Name:		perl-IO-Tty
 Version:	1.02
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -32,7 +32,8 @@ Lista dostêpnych sta³ych znajduje siê w IO::Tty::Constant.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %{!?_without_tests:%{__make} test}
@@ -48,9 +49,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README
-%{perl_sitearch}/IO
-%dir %{perl_sitearch}/auto/IO
-%dir %{perl_sitearch}/auto/IO/Tty
-%{perl_sitearch}/auto/IO/Tty/Tty.bs
-%attr(755,root,root) %{perl_sitearch}/auto/IO/Tty/Tty.so
+%{perl_vendorarch}/IO
+%dir %{perl_vendorarch}/auto/IO
+%dir %{perl_vendorarch}/auto/IO/Tty
+%{perl_vendorarch}/auto/IO/Tty/Tty.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/IO/Tty/Tty.so
 %{_mandir}/man3/*
