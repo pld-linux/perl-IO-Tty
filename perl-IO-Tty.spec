@@ -10,7 +10,8 @@ Summary(pl):	Modu³ Perla IO::Tty - niskopoziomowa alokacja pseudo-tty, wa¿ne sta
 Name:		perl-IO-Tty
 Version:	1.02
 Release:	5
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	875a8bc6e0643f4fc892dbe113e43286
