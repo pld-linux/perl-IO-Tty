@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	IO
 %define	pnam	Tty
-Summary:	IO-Tty perl module
-Summary(pl):	Modu³ perla IO-Tty
+Summary:	IO::Tty perl module
+Summary(pl):	Modu³ perla IO::Tty
 Name:		perl-IO-Tty
 Version:	0.05
 Release:	3
@@ -14,10 +14,10 @@ BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-IO-Tty perl module.
+IO::Tty perl module.
 
 %description -l pl
-Modu³ perla IO-Tty.
+Modu³ perla IO::Tty.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
