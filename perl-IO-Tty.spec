@@ -4,8 +4,8 @@
 Summary:	IO::Tty perl module
 Summary(pl):	Modu³ perla IO::Tty
 Name:		perl-IO-Tty
-Version:	0.05
-Release:	3
+Version:	1.02
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -37,7 +37,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %{perl_sitearch}/IO/*.pm
-%dir %{perl_sitearch}/auto/IO/Tty
-%{perl_sitearch}/auto/IO/Tty/Tty.bs
-%attr(755,root,root) %{perl_sitearch}/auto/IO/Tty/Tty.so
+%{perl_sitearch}/IO/Tty
+%{perl_sitearch}/auto/IO/Tty
 %{_mandir}/man3/*
