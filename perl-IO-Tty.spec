@@ -3,7 +3,7 @@ Summary:	IO-Tty perl module
 Summary(pl):	Modu³ perla IO-Tty
 Name:		perl-IO-Tty
 Version:	0.04
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -38,11 +38,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-
 %{perl_sitearch}/IO/*.pm
-
 %dir %{perl_sitearch}/auto/IO/Tty
 %{perl_sitearch}/auto/IO/Tty/Tty.bs
 %attr(755,root,root) %{perl_sitearch}/auto/IO/Tty/Tty.so
-
 %{_mandir}/man3/*
