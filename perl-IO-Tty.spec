@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	IO
-%define		pnam	Tty
+%define	pdir	IO
+%define	pnam	Tty
 Summary:	IO::Tty Perl module - low-level allocate a pseudo-tty, import constants
 Summary(pl):	Modu³ Perla IO::Tty - niskopoziomowa alokacja pseudo-tty, wa¿ne sta³e
 Name:		perl-IO-Tty
