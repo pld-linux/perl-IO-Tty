@@ -1,10 +1,15 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	IO
 %define		pnam	Tty
-Summary:	IO::Tty - Low-level allocate a pseudo-Tty, import constants.
+Summary:	IO::Tty - Low-level allocate a pseudo-Tty, import constants
+Summary(pl):	Modu³ Perla IO::Tty - niskopoziomowa alokacja pseudo-tty, wa¿ne sta³e
 Name:		perl-IO-Tty
 Version:	1.02
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -13,9 +18,15 @@ BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-C<IO::Tty> is used internally by C<IO::Pty> to create a pseudo-tty.
-You wouldn't want to use it directly except to import constants, use
-C<IO::Pty>.  For a list of importable constants, see L<IO::Tty::Constant>.
+IO::Tty is used internally by IO::Pty to create a pseudo-tty. You
+wouldn't want to use it directly except to import constants, use
+IO::Pty. For a list of importable constants, see IO::Tty::Constant.
+
+%description -l pl
+Modu³ IO::Tty jest u¿ywany wewnêtrznie poprzez IO::Pty do tworzenia
+pseudo terminali (pseudo-tty). Nie nale¿y u¿ywaæ go bezpo¶rednio do
+celów innych ni¿ zaimportowanie sta³ych - nale¿y u¿ywaæ IO::Pty.
+Lista dostêpnych sta³ych znajduje siê w IO::Tty::Constant.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -23,6 +34,8 @@ C<IO::Pty>.  For a list of importable constants, see L<IO::Tty::Constant>.
 %build
 perl Makefile.PL
 %{__make} OPTIMIZE="%{rpmcflags}"
+
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
