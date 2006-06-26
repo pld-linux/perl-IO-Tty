@@ -8,13 +8,13 @@
 Summary:	IO::Tty Perl module - low-level allocate a pseudo-tty, import constants
 Summary(pl):	Modu³ Perla IO::Tty - niskopoziomowa alokacja pseudo-tty, wa¿ne sta³e
 Name:		perl-IO-Tty
-Version:	1.03
-Release:	6
+Version:	1.05
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	785dbdb44432a2ac190de59a58f5d34b
+# Source0-md5:	95c0aa8a1f75b1aff6c1fcaf0c1f7c29
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
