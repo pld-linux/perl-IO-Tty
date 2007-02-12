@@ -6,7 +6,7 @@
 %define		pdir	IO
 %define		pnam	Tty
 Summary:	IO::Tty Perl module - low-level allocate a pseudo-tty, import constants
-Summary(pl):	Modu≥ Perla IO::Tty - niskopoziomowa alokacja pseudo-tty, waøne sta≥e
+Summary(pl.UTF-8):   Modu≈Ç Perla IO::Tty - niskopoziomowa alokacja pseudo-tty, wa≈ºne sta≈Çe
 Name:		perl-IO-Tty
 Version:	1.05
 Release:	2
@@ -25,11 +25,11 @@ IO::Tty is used internally by IO::Pty to create a pseudo-tty. You
 wouldn't want to use it directly except to import constants, use
 IO::Pty. For a list of importable constants, see IO::Tty::Constant.
 
-%description -l pl
-Modu≥ IO::Tty jest uøywany wewnÍtrznie poprzez IO::Pty do tworzenia
-pseudo terminali (pseudo-tty). Nie naleøy uøywaÊ go bezpo∂rednio do
-celÛw innych niø zaimportowanie sta≥ych - naleøy uøywaÊ IO::Pty.
-Lista dostÍpnych sta≥ych znajduje siÍ w IO::Tty::Constant.
+%description -l pl.UTF-8
+Modu≈Ç IO::Tty jest u≈ºywany wewnƒôtrznie poprzez IO::Pty do tworzenia
+pseudo terminali (pseudo-tty). Nie nale≈ºy u≈ºywaƒá go bezpo≈õrednio do
+cel√≥w innych ni≈º zaimportowanie sta≈Çych - nale≈ºy u≈ºywaƒá IO::Pty.
+Lista dostƒôpnych sta≈Çych znajduje siƒô w IO::Tty::Constant.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
