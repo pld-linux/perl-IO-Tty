@@ -6,7 +6,7 @@
 %define		pdir	IO
 %define		pnam	Tty
 Summary:	IO::Tty Perl module - low-level allocate a pseudo-tty, import constants
-Summary(pl.UTF-8):   Moduł Perla IO::Tty - niskopoziomowa alokacja pseudo-tty, ważne stałe
+Summary(pl.UTF-8):	Moduł Perla IO::Tty - niskopoziomowa alokacja pseudo-tty, ważne stałe
 Name:		perl-IO-Tty
 Version:	1.05
 Release:	2
