@@ -28,7 +28,7 @@ IO::Pty. For a list of importable constants, see IO::Tty::Constant.
 
 %description -l pl.UTF-8
 Moduł IO::Tty jest używany wewnętrznie poprzez IO::Pty do tworzenia
-pseudo terminali (pseudo-tty). Nie należy używać go bezpośrednio do
+pseudoterminali (pseudo-tty). Nie należy używać go bezpośrednio do
 celów innych niż zaimportowanie stałych - należy używać IO::Pty.
 Lista dostępnych stałych znajduje się w IO::Tty::Constant.
 
