@@ -6,15 +6,16 @@
 %define		pdir	IO
 %define		pnam	Tty
 Summary:	IO::Tty Perl module - low-level allocate a pseudo-tty, import constants
-Summary(pl.UTF-8):	Moduł Perla IO::Tty - niskopoziomowa alokacja pseudo-tty, ważne stałe
+Summary(pl.UTF-8):	Moduł Perla IO::Tty - import stałych do niskopoziomowego przydzielania pseudo-tty
 Name:		perl-IO-Tty
 Version:	1.05
 Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/IO/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	95c0aa8a1f75b1aff6c1fcaf0c1f7c29
+URL:		http://search.cpan.org/dist/IO-Tty/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-dirs >= 1.0-6
