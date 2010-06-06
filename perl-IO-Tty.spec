@@ -9,7 +9,7 @@ Summary:	IO::Tty Perl module - low-level allocate a pseudo-tty, import constants
 Summary(pl.UTF-8):	Moduł Perla IO::Tty - import stałych do niskopoziomowego przydzielania pseudo-tty
 Name:		perl-IO-Tty
 Version:	1.08
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
