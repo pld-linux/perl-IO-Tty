@@ -61,7 +61,6 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/IO/Tty.pm
 %{perl_vendorarch}/IO/Tty
 %dir %{perl_vendorarch}/auto/IO/Tty
-%{perl_vendorarch}/auto/IO/Tty/Tty.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/IO/Tty/Tty.so
 %{_mandir}/man3/IO::Pty.3pm*
 %{_mandir}/man3/IO::Tty*.3pm*
