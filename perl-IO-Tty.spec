@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests	# perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	IO
 %define		pnam	Tty
 Summary:	IO::Tty and IO::Pty - interface to pseudo-ttys
