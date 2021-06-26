@@ -7,16 +7,20 @@
 Summary:	IO::Tty and IO::Pty - interface to pseudo-ttys
 Summary(pl.UTF-8):	IO::Tty i IO::Pty - interfejs do pseudo-tty
 Name:		perl-IO-Tty
-Version:	1.12
-Release:	8
+Version:	1.16
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/T/TO/TODDR/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	11695a1a516b3bd1b90ce75ff0ce3e6d
-URL:		http://search.cpan.org/dist/IO-Tty/
+Source0:	http://www.cpan.org/modules/by-module/IO/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	5ee30bf7c76f00cc69f92388ad776e2a
+URL:		https://metacpan.org/dist/IO-Tty
+%if %{with tests}
+BuildRequires:	perl-Test-Simple
+%endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 Requires:	perl-dirs >= 1.0-6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
