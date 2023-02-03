@@ -1,19 +1,19 @@
 #
 # Conditional build:
-%bcond_with	tests	# perform "make test"
+%bcond_with	tests	# unit tests
 #
 %define		pdir	IO
 %define		pnam	Tty
 Summary:	IO::Tty and IO::Pty - interface to pseudo-ttys
 Summary(pl.UTF-8):	IO::Tty i IO::Pty - interfejs do pseudo-tty
 Name:		perl-IO-Tty
-Version:	1.16
-Release:	3
+Version:	1.17
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/IO/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	5ee30bf7c76f00cc69f92388ad776e2a
+Source0:	https://www.cpan.org/modules/by-module/IO/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	e4cd744de6a686ca78b20002fc66062a
 URL:		https://metacpan.org/dist/IO-Tty
 %if %{with tests}
 BuildRequires:	perl-Test-Simple
